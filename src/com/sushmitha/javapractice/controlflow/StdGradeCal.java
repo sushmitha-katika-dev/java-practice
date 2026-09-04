@@ -3,25 +3,28 @@ package com.sushmitha.javapractice.controlflow;
 import java.util.Scanner;
 
 public class StdGradeCal {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter Marks: ");
         int marks = sc.nextInt();
 
-        if (marks >= 90 && marks <= 100){
+        if (marks >= 90 && marks <= 100) {
             System.out.println("A-Grade");
-        } else if(marks >= 80 && marks < 90){
+        } else if (marks >= 80 && marks < 90) {
             System.out.println("B-Grade");
-        } else if(marks >= 70 && marks < 80){
+        } else if (marks >= 70 && marks < 80) {
             System.out.println("C-Grade");
-        } else if(marks >= 60 && marks < 70){
+        } else if (marks >= 60 && marks < 70) {
             System.out.println("D-Grade");
-        } else if(marks >= 40 && marks < 60){
+        } else if (marks >= 40 && marks < 60) {
             System.out.println("E-Grade");
-        } else if(marks < 40){
+        } else if (marks >= 0 && marks < 40) {
             System.out.println("FAIL...");
-        } else{
+        } else {
             System.out.println("Invalid input/marks");
         }
+
+        sc.close();
     }
 }
