@@ -1,14 +1,14 @@
 package com.sushmitha.javapractice.controlflow.loopingstatements;
 
-public class CountOfDigits {
+public class ReverseNum {
     public static void main(String[] args) {
-        int n = 12364;
-        int cnt = 0;
+        int n = 1234;
+        int rev = 0;
         while(n > 0){
             int digit = n % 10;
-            cnt++;
-            n = n/10;
+            rev = rev * 10 + digit;
+            n = n / 10;
         }
-        System.out.println(cnt);
+        System.out.println("Reverse: " + rev);
     }
 }
