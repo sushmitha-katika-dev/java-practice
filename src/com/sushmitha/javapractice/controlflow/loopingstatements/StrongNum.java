@@ -1,9 +1,12 @@
 package com.sushmitha.javapractice.controlflow.loopingstatements;
 
+import java.util.Scanner;
+
 // sum of factorials of each digit = num
 public class StrongNum {
        public static void main(String[] args) {
-        int n = 145;
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         int sum = 0;
         int temp = n;
 

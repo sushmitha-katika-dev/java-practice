@@ -1,16 +1,25 @@
 package com.sushmitha.javapractice.controlflow.loopingstatements;
 
+import java.util.Scanner;
+
 public class Armstrong {
     public static void main(String[] args) {
-        int n = 153;
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         int temp = n;
         int sum = 0;
-        while(n > 0){
-            int digit = n % 10;
-            sum += (digit * digit * digit);
-            n = n/10;
+        int cnt = 0;
+        while(temp > 0){
+            cnt++;
+            temp = temp/10;
         }
-        if(temp == sum){
+        temp = n;
+        while(temp > 0){
+            int digit = temp % 10;
+            sum += (int)Math.pow(digit, cnt);
+            temp = temp/10;
+        }
+        if(sum == n){
             System.out.println("Armstrong");
         } else{
             System.out.println("Not Armstrong");

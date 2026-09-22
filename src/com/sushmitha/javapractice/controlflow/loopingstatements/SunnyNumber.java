@@ -8,7 +8,7 @@ public class SunnyNumber {
         boolean isPerfectSquare = false;
 
         if (x >= 0) {
-            for (int i = 0; i * i <= x; i++) {
+            for (int i = 1; i <= x; i++) {
                 if (i * i == x) {
                     isPerfectSquare = true;
                     break;
