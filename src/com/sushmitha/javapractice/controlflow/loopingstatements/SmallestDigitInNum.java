@@ -1,6 +1,6 @@
 package com.sushmitha.javapractice.controlflow.loopingstatements;
 
-public class SmallestDigitInMin {
+public class SmallestDigitInNum {
     public static void main(String[] args) {
         int n = 47821;
         int min = 9;
