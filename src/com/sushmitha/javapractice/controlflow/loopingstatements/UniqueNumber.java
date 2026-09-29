@@ -12,6 +12,7 @@ public class UniqueNumber {
         boolean isUnique = true;
 
         for(int i = 0; i < 9; i++){
+
             int temp = n;
             int cnt = 0;
             while(temp > 0){
