@@ -40,7 +40,6 @@ public class AtmNotes {
     }
     public static void main(String[] args) {
         AtmNotes atm = new AtmNotes();
-        ElectricityBillGenerator e = new ElectricityBillGenerator();
         Scanner sc = new Scanner(System.in);
         int amount = sc.nextInt();
         atm.minimumNumberOfNotes(amount);
